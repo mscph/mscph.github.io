@@ -12,7 +12,7 @@
 You can now open the site at http://localhost:3000.
 
 ### Remove all containers and images
-`docker compose down --rmi all --volumes --remove-orphans`
+`docker compose down dev --rmi all --volumes --remove-orphans`
 
 ## Deploy for production
 
