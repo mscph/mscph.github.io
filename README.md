@@ -4,15 +4,22 @@
 * Docker desktop is installed and running
 * Node.js is installed
 
-## Build the Docker image
-`docker build -t mscph.github.io .`
+## Deploy for development
 
-## Run the Docker container
-`docker run -p 3000:80 mscph.github.io`
+### Run the Docker container for Development
+`docker compose up dev`
 
 You can now open the site at http://localhost:3000.
 
-## Deploy to Github Pages
+### Remove all containers and images
+`docker compose down --rmi all --volumes --remove-orphans`
+
+## Deploy for production
+
+### Build the Docker image
+`docker compose build`
+
+### Deploy to Github Pages
 `npm run deploy`
 
 Changes are deployed at https://mscph.github.io.
