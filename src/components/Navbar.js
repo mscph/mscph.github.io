@@ -18,7 +18,6 @@ export default function Navbar() {
                 <li><Link to={'/about'} className='text-black hover:text-red-500'>About Us</Link></li>
                 <li><Link to={'/programs'} className='text-black hover:text-red-500'>Programs and Services</Link></li>
                 <li><Link to={'/newsandupdates'} className='text-black hover:text-red-500'>News and Updates</Link></li>
-                <li><Link to={'/getinvolved'} className='text-black hover:text-red-500'>Get Involved</Link></li>
                 <li><Link to={'/donate'} className='text-black hover:text-red-500'>Donate</Link></li>
                 <li><Link to={'/contact'} className='text-black hover:text-red-500'>Contact Us</Link></li>
  

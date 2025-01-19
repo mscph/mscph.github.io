@@ -29,7 +29,7 @@ export default function NewsDetails() {
         <p className='text-gray-300'>{newsItem.date}</p>
 
         <div className='w-full h-96 bg-gray-300 mt-5'>
-          <img src={`${newsItem.cover_image}`} alt={newsItem.headline}  className='h-full w-full object-cover'/>
+          <img src={`${newsItem.cover_image}`} className='h-full w-full object-cover'/>
         </div>
 
         <div className='mt-5'>
@@ -43,7 +43,6 @@ export default function NewsDetails() {
               <div key={index} className="h-64 w-full lg:w-80">
                 <img 
                   src={`${newsItem[photoKey]}`} 
-                  alt={`Featured Photo ${index + 2}`} 
                   className="h-full w-full object-cover" 
                 />
               </div>

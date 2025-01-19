@@ -4,7 +4,7 @@ import DonateChip from '../components/donate'
 import { newsandupdates } from '../contents/newsandupdates'
 import NewsandUpdatesChip from '../components/newsandupdateschip'
 import { programs } from '../contents/programsdata'
-import { FaArrowRight, FaChevronRight } from 'react-icons/fa6'
+import { FaChevronRight } from 'react-icons/fa6'
 
 export default function HomePage() {
 
@@ -41,7 +41,7 @@ export default function HomePage() {
           {programs.map((program, index) => (
             <div key={index} className='flex flex-col items-center'>
               <div className="h-28 w-28">
-                <img src={`programs/${program.icon}`} alt={`${program.title} icon`} />
+                <img src={`programs/${program.icon}`} />
               </div>
               <div className='mt-2'>
                 <h1 className="text-xs text-white text-center italic">{program.title}</h1>
