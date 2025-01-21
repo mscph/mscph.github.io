@@ -4,11 +4,19 @@
   margin: 0;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
   width: 80%;
   margin: auto;
   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  
+  scrollbar-width: none;
+}
+
+/* For mobile devices (max-width: 768px or smaller) */
+@media (max-width: 768px) {
+  body {
+    width: 90%;
+  }
 }

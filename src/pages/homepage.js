@@ -5,6 +5,7 @@ import { newsandupdates } from '../contents/newsandupdates'
 import NewsandUpdatesChip from '../components/newsandupdateschip'
 import { programs } from '../contents/programsdata'
 import { FaChevronRight } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 
 export default function HomePage() {
 
@@ -18,50 +19,74 @@ export default function HomePage() {
 
   return (
     <div>
-      <main className='w-full flex items-center flex-col mb-10 animate-fade'>
-      <div className="mb-10 w-full h-[50vh]">
-        <img
-          alt="This is the cover image"
-          src="mscpictures/Feb242024/featured_photo2.jpg"
-          className="w-full h-full object-cover"
-        />
-      </div>
+      <main className='w-full flex items-center flex-col mt-10'>
 
+        <h1 className='text-center text-lg font-bold text-red-600 lg:text-2xl'>CARING FOR THE PEOPLE AND THE ENVIRONMENT</h1>
+        <p className=' md:w-10/12 text-center mb-10 mt-2'>Center for the Poor-MSC is a working arm of the Missionaries of the Sacred Heart, we are a grassroots, non-profit organization dedicated to caring for the people and the environment.</p>
 
+        <div className="w-full lg:h-[50vh]">
+          <img
+            alt="This is the cover image"
+            src="mscpictures/Feb242024/featured_photo2.jpg"
+            className="w-full h-full object-cover"
+          />
+        </div>
          
-          <h1 className='text-center text-lg font-bold text-red-600 lg:text-2xl mb-4'>CARING FOR THE PEOPLE AND THE ENVIRONMENT</h1>
-          <p className='w-11/12 text-sm lg:w-8/12 md:w-10/12 text-center'>Center for the Poor-MSC is a working arm of the Missionaries of the Sacred Heart, we are a grassroots, non-profit organization dedicated to caring for the people and the environment.</p>
-        </main>
 
-        <section className='min-h-96 bg-black p-10 animate-slideInLeft'>
-          <h1 className='text-center text-white font-bold lg:text-xl'>PROGRAMS AND SERVICES</h1>
+      </main>
 
-          
-          <div className='flex flex-row justify-evenly mt-14 gap-10'>
-          {programs.map((program, index) => (
-            <div key={index} className='flex flex-col items-center'>
-              <div className="h-28 w-28">
-                <img src={`programs/${program.icon}`} />
-              </div>
-              <div className='mt-2'>
-                <h1 className="text-xs text-white text-center italic">{program.title}</h1>
-              </div>
+        <section className='p-5 lg:p-10'>
+          <h1 className='text-center text-red-600 lg:text-xl'>Be the Heart of Christ on Earth! Help the Missions!</h1>
+
+          <p className='mt-5 text-center'>Our mission for the poor remains the greatest challenge for us as Christians. It is always been a call for us to help others who are in need. As Pope Francis emphasize in his homily during his inauguration mass, a Christian "must open his arms to protect all of God's people and embrace with tender affection the whole of humanity, especially the poorest, the weakest, the least important.” However, our aim here is not only to protect God’s people, but to ensure that even the poorest among them have access to basic services like education, basic health care and safe drinking water. We are born Christians and in order to become one, we must follow Christ's footstep towards his kingdom.</p>
+
+          <div className='mt-10 flex flex-col md:flex-row'>
+            <div className='md:w-6/12'>
+              <iframe className='h-80 w-full' src="https://www.youtube.com/embed/yUdPayRnvpA">
+              </iframe>
             </div>
-          ))}
-          </div> 
 
-          <div className='flex flex-row mt-16 items-center justify-center'>
-            <p className='text-white text-center'>Learn more</p>
-            <FaChevronRight className='text-white'/>
+
+            <div className='mt-5 lg:mt-0 p-0 lg:p-10 md:w-6/12'> 
+              <p className='italic text-center'>“For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me…” - Matthew 25:35-36</p>
+
+              <p className='mt-4 font-bold text-center'>
+              The MSC Mission Office believes that everyone is called to be the heart of Christ here on earth. To help, to serve, and to love.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className='min-h-96 p-5 sm:p-10'>
+          <h1 className='text-center text-red-600 font-bold text-lg sm:text-xl'>PROGRAMS AND SERVICES</h1>
+
+          <div className='flex flex-wrap justify-evenly mt-14 gap-10'>
+            {programs.map((program, index) => (
+              <div key={index} className='flex flex-col items-center w-full sm:w-auto'>
+                <div className="h-28 w-28 sm:h-32 sm:w-32">
+                  <img src={`programs/${program.icon}`} alt={program.title} />
+                </div>
+                <div className='mt-2'>
+                  <h1 className="text-xs sm:text-sm text-center italic">{program.title}</h1>
+                </div>
+              </div>
+            ))}
           </div>
 
+          <Link to={'/programs'}>
+            <div className='flex flex-row mt-10 items-center justify-center'>
+              <p className='text-center'>Learn more</p>
+              <FaChevronRight />
+            </div>
+          </Link>
         </section>
 
 
-        <section className='animate-fade'>
+
+        <section>
           <h1 className='text-center text-lg font-bold text-red-600 lg:text-2xl my-10'>NEWS AND UPDATES</h1>
 
-          <div className='flex flex-col lg:flex-row mb-5'>
+          {/* <div className='flex flex-col lg:flex-row mb-5'>
             <div className='h-56 lg:h-80 w-full lg:w-6/12 bg-gray-200'></div>
 
             <div className='w-full lg:w-6/12 lg:p-10'>
@@ -73,7 +98,7 @@ export default function HomePage() {
                 <p className='text-red-400 hover:cursor-pointer text-end lg:text-start'>Read More</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className='flex flex-col lg:flex-row md:flex-row gap-10 justify-center'>
             {randomNews.map((data, idx) => (

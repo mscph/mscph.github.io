@@ -35,7 +35,7 @@ export const programs = [
         'Formation of Priests, Religious Brothers and Sisters, and Lay Associates.',
         'Support the formation costs associated with the formation, education, or training of Priests, Brothers, Sisters, and Lay Associates within the Chevalier family and its affiliates.',
       ],
-      icon: "image.jpg"
+      icon: "MSCLogo.jpg"
     },
     {
       title: 'ENVIRONMENTAL PROGRAMS',

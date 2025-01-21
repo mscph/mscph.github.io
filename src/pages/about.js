@@ -11,7 +11,7 @@ export default function About() {
     <div className='mt-10'>
        <h1 className='text-center text-lg font-bold text-red-600 lg:text-2xl mb-4'>ABOUT US</h1>
 
-       <p className='w-full m-auto text-center lg:w-8/12 md:w-10/12'>The Mission Office of the Missionaries of the Sacred Heart – Philippine Province formally opened on September 1, 2009 at the MSC Provincialate in Gilmore Avenue, Quezon City. Its primary purpose is to assist the MSC family in mobilizing resources, local and foreign, for development projects that are responsive to the needs of the communities they minister to, with particular attention to the poorest of the poor and in remote mission areas. </p>
+       <p className='w-full m-auto text-center'>The Mission Office of the Missionaries of the Sacred Heart – Philippine Province formally opened on September 1, 2009 at the MSC Provincialate in Gilmore Avenue, Quezon City. Its primary purpose is to assist the MSC family in mobilizing resources, local and foreign, for development projects that are responsive to the needs of the communities they minister to, with particular attention to the poorest of the poor and in remote mission areas. </p>
 
       <div className='my-20'>
         <Carousel/>
