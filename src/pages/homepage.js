@@ -60,13 +60,13 @@ export default function HomePage() {
         <section className='min-h-96 p-5 sm:p-10'>
           <h1 className='text-center text-red-600 font-bold text-lg sm:text-xl'>PROGRAMS AND SERVICES</h1>
 
-          <div className='flex flex-wrap justify-evenly mt-14 gap-10'>
+          <div className='flex flex-wrap justify-evenly mt-14 gap-x-3 gap-y-4 mb-4'>
             {programs.map((program, index) => (
               <div key={index} className='flex flex-col items-center w-full sm:w-auto'>
                 <div className="h-28 w-28 sm:h-32 sm:w-32">
                   <img src={`programs/${program.icon}`} alt={program.title} />
                 </div>
-                <div className='mt-2'>
+                <div className='mt-2 w-32'>
                   <h1 className="text-xs sm:text-sm text-center italic">{program.title}</h1>
                 </div>
               </div>

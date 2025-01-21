@@ -18,7 +18,7 @@ export default function DonateChip() {
             we can  improve communities by providing clean water, educational support, feeding programs, and values formation for disadvantaged youth. It also focuses on preventing epidemic diseases, supporting seminarians in their formation, and offering relief assistance to victims of calamities and disasters.
           </p>
 
-          <div className='bg-red-600 rounded-md mt-3 w-4/12 m-auto p-2'>
+          <div className='bg-red-600 rounded-md mt-3 w-6/12 md:w-4/12 m-auto p-2'>
             <Link to={'/donate'}>
               <p className='font-bold text-white text-xs'>DONATE NOW</p>
             </Link>
