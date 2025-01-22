@@ -40,7 +40,8 @@ export default function About() {
       <div className='mt-20 flex flex-col lg:flex-row items-center'>
 
         <div className='bg-gray-200 w-full lg:w-6/12 h-72 lg:h-96'>
-
+          <img src={`mscpictures/jan182024/featured_photo1.jpg`}
+          className='h-full w-full object-cover'/>
         </div>
 
         <div className='w-full lg:w-6/12 p-10 lg:h-96 lg:px-10 bg-red-600 flex flex-col items-center justify-center'>
@@ -72,7 +73,10 @@ export default function About() {
           </ol>
         </div>
 
-        <div className='bg-gray-200 w-full lg:w-6/12 h-72 lg:h-96'></div>
+        <div className='bg-gray-200 w-full lg:w-6/12 h-72 lg:h-96'>
+          <img src={`mscpictures/feb242024/featured_photo1.jpg`}
+          className='h-full w-full object-cover'/>
+        </div>
 
       </div>
 
@@ -86,6 +90,7 @@ export default function About() {
                 key={idx}
                 name={data.name}
                 position={data.position}
+                profile={data.image}
               />
             ))}
         </div>

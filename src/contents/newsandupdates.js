@@ -45,5 +45,17 @@ export const newsandupdates = [
         featured_photo_3: "/mscpictures/Jan182024/featured_photo3.jpg",
         featured_photo_4: "/mscpictures/Jan182024/featured_photo4.jpg",
         featured_photo_5: "/mscpictures/Jan182024/featured_photo5.jpg"
-    }
+    },
+    {
+      id: 5,
+      cover_image: "/mscpictures/May22202402/featured_photo1.jpg",
+      date: 'January 18, 2024',
+      headline: ' Fr. Roger visits San Luis Lumad Community High School',
+      description: 'The San Luis Lumad Community High School is an MSC-administered school located in Brgy. Poblacion, San Luis, Agusan del Sur. The school was established in 1996 with the mission to help the indigineous students finish their secondary education. The school also promotes in preserving their indigenous values and culture and upholds their social, economic and cultural rights. Presently, more than 70 students are enrolled in the said lumad school.',
+      hyperlink: '',
+      featured_photo_2: "/mscpictures/May22202402/featured_photo2.jpg",
+      featured_photo_3: "/mscpictures/May22202402/featured_photo3.jpg",
+      featured_photo_4: "/mscpictures/May22202402/featured_photo4.jpg",
+      featured_photo_5: "/mscpictures/May22202402/featured_photo5.jpg"
+  }
 ]
