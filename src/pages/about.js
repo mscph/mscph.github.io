@@ -5,6 +5,7 @@ import Carousel from '../components/about/carousel'
 import BoardOfTrusteesCard from '../components/about/boardoftrustees'
 import { boardoftrustees } from '../contents/boardoftrusteesdata';
 import Partners from '../components/about/partners'
+import { affiliates } from '../contents/affiliates'
 
 export default function About() {
   return (
@@ -84,7 +85,7 @@ export default function About() {
       <div className='my-40'>
         <h1 className='text-lg font-bold text-red-600 lg:text-2xl mb-4'>BOARD OF TRUSTEES</h1>
         
-        <div className='flex flex-wrap justify-start gap-5 md:gap-4 lg:gap-4'>
+        <div className='flex flex-wrap justify-center gap-5 md:gap-4 lg:gap-4'>
             {boardoftrustees.map((data, idx) => (
               <BoardOfTrusteesCard
                 key={idx}
@@ -98,9 +99,16 @@ export default function About() {
       </div>
 
       <div className='my-40'>
-        <h1 className='text-center text-lg font-bold text-red-600 lg:text-2xl mb-4'>OUR PARTNERS</h1>
+        <h1 className='text-center text-lg font-bold text-red-600 lg:text-2xl mb-4'>GOVERNMENT AFFILIATION AND REGISTRATION</h1>
+          
+        <div className='flex flex-wrap justify-center gap-5 md:gap-4 lg:gap-4 mt-10'>
+          {affiliates.map((data, idx) => (
+            <Partners key={idx} name={data.name} logo={data.logo}/>
+          ))}
+        </div>
 
-        <Partners/>
+        
+        
       </div>
        
       <Footer/>

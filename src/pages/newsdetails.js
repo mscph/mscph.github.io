@@ -37,10 +37,10 @@ export default function NewsDetails() {
         </div>
 
         <div className="mt-10 flex flex-wrap gap-4 items-center w-full justify-center">
-          {['featured_photo_2', 'featured_photo_3', 'featured_photo_4']
+          {['featured_photo_2', 'featured_photo_3', 'featured_photo_4', 'featured_photo_5']
             .filter(photoKey => newsItem[photoKey])
             .map((photoKey, index) => (
-              <div key={index} className="h-64 w-full lg:w-80">
+              <div key={index} className="h-64 w-full lg:w-60">
                 <img 
                   src={`${newsItem[photoKey]}`} 
                   className="h-full w-full object-cover" 

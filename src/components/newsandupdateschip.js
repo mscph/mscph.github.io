@@ -15,9 +15,10 @@ export default function NewsandUpdatesChip({id, date, headline, description, cov
           </div>
 
 
-          <Link to={`/newsdetails/${id}`} key={id}>
+          
+          <a href={`/newsdetails/${id}`} key={id}>
             <p className='text-red-400 hover:cursor-pointer text-end mt-2 text-sm'>Read More</p>
-          </Link>
+          </a>
       </div>
   )
 }

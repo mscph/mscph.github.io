@@ -1,9 +1,63 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { FaEnvelope, FaFacebook, FaLocationPin } from 'react-icons/fa6'
 import Footer from '../components/Footer'
 
 export default function Contact() {
+
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    emailAddress: '',
+    phoneNumber: '',
+    message: ''
+  })
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.firstName) newErrors.firstName = "First name is required";
+    if (!formData.lastName) newErrors.lastName = "Last name is required";
+    if (!formData.emailAddress) newErrors.emailAddress = "Email address is required";
+    if (!formData.message) newErrors.message = "Message is required";
+    return newErrors;
+  };
+
+   const [errors, setErrors] = useState({});
+
+  const handleInputChange = (e) => {
+    const {name, value} = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formErrors = validateForm();
+  if (Object.keys(formErrors).length === 0) {
+    const subject = encodeURIComponent('Contact Form Submission');
+
+    const body = encodeURIComponent(
+      `Dear Ma'am/Sir,\n\n` +
+      `You have received a new message from the contact form on your website. Below are the details:\n\n` +
+      `First Name: ${formData.firstName}\n` +
+      `Last Name: ${formData.lastName}\n` +
+      `Email Address: ${formData.emailAddress}\n` +
+      `Phone Number: ${formData.phoneNumber}\n\n` +
+      `Message:\n${formData.message}\n\n` +
+      `Kind regards,\n` +
+      `${formData.firstName} ${formData.lastName}`
+    );
+
+    const mailtoLink = `mailto:villasoraironevonn@gmail.com?subject=${subject}&body=${body}`;
+
+      window.location.href = mailtoLink;
+    } else {
+      setErrors(formErrors);
+    }
+  }
+
   return (
     <div className='mt-10'>
        <h1 className='text-center text-lg font-bold lg:text-2xl mb-4 uppercase'>Get in touch with us.</h1>
@@ -13,43 +67,75 @@ export default function Contact() {
        <div className='flex gap-2 justify-between mt-20'>
         {/* FORM */}
         <div className='lg:w-5/12 m-auto'>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className='mt-4'>
 
               <div className='flex gap-2'>
                 <div>
                   <label>First Name</label>
-                  <input className='bg-gray-100 p-2 mt-2 w-full rounded-sm' type='text' placeholder='First Name' name='firstName'></input>
+                  <input 
+                  className='bg-gray-100 p-2 mt-2 w-full rounded-sm' 
+                  type='text' 
+                  placeholder='First Name' 
+                  name='firstName'
+                  value={formData.firstName}
+                  onChange={handleInputChange}></input>
+
+                  {errors.firstName ? <p className="text-xs text-red-500">{errors.firstName}</p> : <p></p>}
                 </div>
 
                 <div>
                   <label>Last Name</label>
-                  <input className='bg-gray-100 p-2 mt-2 w-full rounded-sm' type='text' placeholder='Last Name' name='lastName'></input>
+                  <input 
+                  className='bg-gray-100 p-2 mt-2 w-full rounded-sm' 
+                  type='text' 
+                  placeholder='Last Name' 
+                  name='lastName'
+                  value={formData.lastName}
+                  onChange={handleInputChange}></input>
+
+                  {errors.lastName ? <p className="text-xs text-red-500">{errors.lastName}</p> : <p></p>}
                 </div>
               </div>
 
 
               <div className='mt-3'>
                 <label>Email Address</label>
-                <input className='bg-gray-100 p-2 mt-2 w-full rounded-sm' type='text' placeholder='example@gmail.com' name='emailAddress'></input>
+                <input
+                className='bg-gray-100 p-2 mt-2 w-full rounded-sm' 
+                type='text' 
+                placeholder='example@gmail.com' name='emailAddress'
+                value={formData.emailAddress}
+                onChange={handleInputChange}></input>
+                 {errors.emailAddress ? <p className="text-xs text-red-500">{errors.emailAddress}</p> : <p></p>}
               </div>
 
               <div className='mt-3'>
                 <label>Phone Number</label>
-                <input className='bg-gray-100 p-2 mt-2 w-full rounded-sm' type='text' placeholder='Must start with +63' name='phoneNumber'></input>
+                <input 
+                className='bg-gray-100 p-2 mt-2 w-full rounded-sm' 
+                type='text' 
+                placeholder='Must start with +63' name='phoneNumber'
+                value={formData.phoneNumber}
+                onChange={handleInputChange}></input>
               </div>
 
               <div className='mt-3'>
                 <label >Message</label>
-                <input className='bg-gray-100 p-2 mt-2 w-full rounded-sm' type='text' placeholder='Leave us a message.' name='message'></input>
+                <input 
+                className='bg-gray-100 p-2 mt-2 w-full rounded-sm' 
+                type='text' 
+                placeholder='Leave us a message.' name='message'
+                value={formData.message}
+                onChange={handleInputChange}></input>
+                 {errors.message ? <p className="text-xs text-red-500">{errors.message}</p> : <p></p>}
               </div>
 
-              <input className='bg-black text-white rounded-sm mt-3 w-full p-2 cursor-pointer' type="button" value="Send Email" />
+              <input className='bg-black text-white rounded-sm mt-3 w-full p-2 cursor-pointer' type="submit" value="Send Email" />
             </div>
           </form>
         </div>
 
-        {/* CONTACT DETAILS */}
         <div className='lg:w-5/12 m-auto'>
           <div>
             
@@ -99,7 +185,13 @@ export default function Contact() {
                 </li>
               </ul>
 
-              <div className='bg-gray-200 h-40 w-full mt-5'></div>
+              <div className='bg-gray-200 h-40 w-full mt-5'>
+                <img
+                  alt="This is location of the site"
+                  src="mscpictures/EmbeddedImage.png"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
             
             
