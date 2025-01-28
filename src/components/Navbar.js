@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav className='flex h-20 items-center justify-between'>
         <div>
             <NavLink to={'/'}>
-                <img src='MSCLogo.jpg' height={60} width={60} alt="MSC Logo" />
+                <img src='/images/MSCLogo.jpg' height={60} width={60} alt="MSC Logo" />
             </NavLink>
         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'; 
 
 export default function NewsandUpdatesChip({id, date, headline, description, cover_image}) {
   return (
@@ -16,9 +16,9 @@ export default function NewsandUpdatesChip({id, date, headline, description, cov
 
 
           
-          <a href={`/newsdetails/${id}`} key={id}>
+          <Link to={`/newsdetails/${id}`}>
             <p className='text-red-400 hover:cursor-pointer text-end mt-2 text-sm'>Read More</p>
-          </a>
+            </Link>
       </div>
   )
 }
