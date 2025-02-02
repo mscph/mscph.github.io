@@ -21,8 +21,8 @@ export default function HomePage() {
     <div>
       <main className='w-full flex items-center flex-col mt-10'>
 
-        <h1 className='text-center text-lg font-bold text-red-600 lg:text-2xl'>CARING FOR THE PEOPLE AND THE ENVIRONMENT</h1>
-        <p className=' md:w-10/12 text-center mb-10 mt-2'>Center for the Poor-MSC is a working arm of the Missionaries of the Sacred Heart, we are a grassroots, non-profit organization dedicated to caring for the people and the environment.</p>
+        <h1 className='text-center text-lg font-bold text-red-600 lg:text-2xl'>Be the Heart of Christ on Earth. Help the Missions.</h1>
+        <p className=' md:w-10/12 text-center mb-10 mt-2'>The MSC Mission Office believes that everyone is called to be the heart of Christ here on earth.</p>
 
         <div className="w-full lg:h-[50vh]">
           <img
@@ -36,23 +36,19 @@ export default function HomePage() {
       </main>
 
         <section className='p-5 lg:p-10'>
-          <h1 className='text-center text-red-600 lg:text-xl'>Be the Heart of Christ on Earth! Help the Missions!</h1>
 
-          <p className='mt-5 text-center'>Our mission for the poor remains the greatest challenge for us as Christians. It is always been a call for us to help others who are in need. As Pope Francis emphasize in his homily during his inauguration mass, a Christian "must open his arms to protect all of God's people and embrace with tender affection the whole of humanity, especially the poorest, the weakest, the least important.” However, our aim here is not only to protect God’s people, but to ensure that even the poorest among them have access to basic services like education, basic health care and safe drinking water. We are born Christians and in order to become one, we must follow Christ's footstep towards his kingdom.</p>
+        <p className='mt-4 text-center italic'>
+        “For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me…” - Matthew 25:35-36
+              </p>
 
           <div className='mt-10 flex flex-col md:flex-row'>
             <div className='md:w-6/12'>
-              <iframe className='h-80 w-full' src="https://www.youtube.com/embed/yUdPayRnvpA">
+              <iframe className='h-full w-full' src="https://www.youtube.com/embed/yUdPayRnvpA">
               </iframe>
             </div>
 
-
             <div className='mt-5 lg:mt-0 p-0 lg:p-10 md:w-6/12'> 
-              <p className='italic text-center'>“For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me…” - Matthew 25:35-36</p>
-
-              <p className='mt-4 font-bold text-center'>
-              The MSC Mission Office believes that everyone is called to be the heart of Christ here on earth. To help, to serve, and to love.
-              </p>
+              <p className='text-justify'>Our mission for the poor remains the greatest challenge for us as Christians. It is always been a call for us to help others who are in need. As Pope Francis emphasize in his homily during his inauguration mass, a Christian "must open his arms to protect all of God's people and embrace with tender affection the whole of humanity, especially the poorest, the weakest, the least important.” However, our aim here is not only to protect God’s people, but to ensure that even the poorest among them have access to basic services like education, basic health care and safe drinking water. We are born Christians and in order to become one, we must follow Christ's footstep towards his kingdom.</p>
             </div>
           </div>
         </section>

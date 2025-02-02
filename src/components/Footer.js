@@ -6,11 +6,11 @@ export default function Footer() {
   return (
     <footer className='flex w-full flex-col lg:flex-row px-10 py-5 footer mt-20'>
         <div className='lg:w-8/12'>
-            <h3 className='text-center lg:text-left font-bold text-white text-lg'>Center for the Poor - MSC</h3>
+            <h3 className='text-center lg:text-left font-bold text-white text-lg'>MSC Mission Office Philippines</h3>
             
             <div className='mt-3'>
                 <h4 className='font-bold text-white lg:text-left text-center'>About Us</h4>
-                <p className='text-sm text-white lg:text-left text-center' id='description'>Center for the Poor-MSC is a working arm of the Missionaries of the Sacred Heart, we are a grassroots, non-profit organization dedicated to caring for the people and the environment.</p>
+                <p className='text-sm text-white lg:text-left text-center' id='description'>MSC Mission Office Philippines is a local branch of the Missionaries of the Sacred Heart. Our primary focus is on mobilizing resources to support development projects aimed at assisting the poorest communities in the Philippines, particularly in remote mission areas.</p>
             </div>
         </div>
 
