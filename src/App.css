@@ -17,6 +17,6 @@ body {
 /* For mobile devices (max-width: 768px or smaller) */
 @media (max-width: 768px) {
   body {
-    width: 80%;
+    width: 90%;
   }
 }

@@ -5,20 +5,15 @@ import Footer from '../components/Footer';
 
 export default function NewsandUpdates() {
 
-  const getRandomItems = (items, count) => {
-    return [...items]
-      .sort(() => Math.random() - 0.5)
-      .slice(0, count); 
-  };
-
-  const randomNews = getRandomItems(newsandupdates, 9);
+  // Sort news by date descending (most recent first)
+  const sortedNews = [...newsandupdates].sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return (
     <div className='mt-5'>
       <h1 className='text-center text-lg font-bold text-red-600 lg:text-2xl mb-4'>NEWS AND UPDATES</h1>
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center mt-10'>
-        {randomNews.map((data, idx) => (
+        {sortedNews.slice(0, 20).map((data, idx) => (
           <NewsandUpdatesChip
             key={idx}
             id={data.id}
@@ -30,7 +25,7 @@ export default function NewsandUpdates() {
         ))}
       </div>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }

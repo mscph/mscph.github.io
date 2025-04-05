@@ -28,8 +28,8 @@ export default function NewsDetails() {
         <h1 className='font-bold text-xl'>{newsItem.headline}</h1>
         <p className='text-gray-300'>{newsItem.date}</p>
 
-        <div className='w-full h-96 bg-gray-300 mt-5'>
-          <img src={`${newsItem.cover_image}`} className='h-full w-full object-cover'/>
+        <div className='w-full h-96 mt-5'>
+          <img src={`${newsItem.cover_image}`} className='h-full w-full object-scale-down'/>
         </div>
 
         <div className='mt-5'>
@@ -37,10 +37,10 @@ export default function NewsDetails() {
         </div>
 
         <div className="mt-10 flex flex-wrap gap-4 items-center w-full justify-center">
-          {['featured_photo_2', 'featured_photo_3', 'featured_photo_4', 'featured_photo_5']
+          {['featured_photo_2', 'featured_photo_3', 'featured_photo_4', 'featured_photo_5', 'featured_photo_6', 'featured_photo_7', 'featured_photo_8']
             .filter(photoKey => newsItem[photoKey])
             .map((photoKey, index) => (
-              <div key={index} className="h-64 w-full lg:w-60">
+              <div key={index} className="h-64 w-full lg:w-80">
                 <img 
                   src={`${newsItem[photoKey]}`} 
                   className="h-full w-full object-cover" 
