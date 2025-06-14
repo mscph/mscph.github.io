@@ -88,14 +88,14 @@ export const newsandupdates = [
  },
  {
     id: 8,
-    cover_image: "/mscpictures/Dec302024/featured_photo1.jpg",
+    cover_image: "/mscpictures/Dec302024/Featured_Photo1.jpg",
     date: 'December 30, 2024',
     headline: 'Paskong Handog: A Christmas Noche Buena Basket Project',
     description: `The Christmas season is a time of love, generosity, and togetherness—a season where the spirit of giving shines the brightest. This year, the Missionaries of the Sacred Heart (MSC), through the MSC Mission Office, embarked on a heartfelt mission to bring joy to families in need through the "Paskong Handog: A Christmas Noche Buena Basket Project.`,
     hyperlink: '',
-    featured_photo_2: "/mscpictures/Dec302024/featured_photo2.jpg",
-    featured_photo_3: "/mscpictures/Dec302024/featured_photo3.jpg",
-    featured_photo_4: "/mscpictures/Dec302024/featured_photo4.jpg",
+    featured_photo_2: "/mscpictures/Dec302024/Featured_Photo2.jpg",
+    featured_photo_3: "/mscpictures/Dec302024/Featured_Photo3.jpg",
+    featured_photo_4: "/mscpictures/Dec302024/Featured_Photo4.jpg",
  },
  {
     id: 9,
