@@ -41,7 +41,7 @@ export default function About() {
       <div className='mt-20 flex flex-col lg:flex-row items-center'>
 
         <div className='bg-gray-200 w-full lg:w-6/12 h-72 lg:h-96'>
-          <img src={`mscpictures/jan182024/featured_photo1.jpg`}
+          <img src={`mscpictures/Jan182024/featured_photo1.jpg`}
           className='h-full w-full object-cover'/>
         </div>
 
@@ -75,7 +75,7 @@ export default function About() {
         </div>
 
         <div className='bg-gray-200 w-full lg:w-6/12 h-72 lg:h-96'>
-          <img src={`mscpictures/feb242024/featured_photo1.jpg`}
+          <img src={`mscpictures/Feb242024/featured_photo1.jpg`}
           className='h-full w-full object-cover'/>
         </div>
 
