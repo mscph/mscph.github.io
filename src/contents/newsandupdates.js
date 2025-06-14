@@ -68,8 +68,7 @@ export const newsandupdates = [
       featured_photo_2: "/mscpictures/Dec2021/featured_photo2.jpg",
       featured_photo_3: "/mscpictures/Dec2021/featured_photo3.jpg",
       featured_photo_4: "/mscpictures/Dec2021/featured_photo4.jpg",
-      featured_photo_5: "/mscpictures/Dec2021/featured_photo5.jpg",
-      featured_photo_6: "/mscpictures/Dec2021/featured_photo6.jpg"
+      featured_photo_5: "/mscpictures/Dec2021/featured_photo5.jpg"
   },
   {
     id: 7,
@@ -83,8 +82,7 @@ export const newsandupdates = [
     featured_photo_2: "/mscpictures/Nov162020/featured_photo2.jpg",
     featured_photo_3: "/mscpictures/Nov162020/featured_photo3.jpg",
     featured_photo_4: "/mscpictures/Nov162020/featured_photo4.jpg",
-    featured_photo_5: "/mscpictures/Nov162020/featured_photo5.jpg",
-    featured_photo_6: "/mscpictures/Nov162020/featured_photo6.jpg"
+    featured_photo_5: "/mscpictures/Nov162020/featured_photo5.jpg"
  },
  {
     id: 8,
@@ -134,10 +132,8 @@ export const newsandupdates = [
     headline: 'Christmas Basket Project',
     description: `The MSC Mission Office Phils through the Task Force on Urban Conscientization (TFUC) conducted the 1st batch of Christmas Basket distribution in Brgy. Cupang, Antipolo last December 23, 2023. A total of 150 families benefited project. We would like to thank all our mission partners and donors who took part of this worthwhile project. `,
     hyperlink: '',
-    featured_photo_2: "/mscpictures/Dec232024/featured_photo2.jpg",
-    featured_photo_3: "/mscpictures/Dec232024/featured_photo3.jpg",
-    featured_photo_4: "/mscpictures/Dec232024/featured_photo4.jpg",
-    featured_photo_5: "/mscpictures/Dec232024/featured_photo5.jpg",
+    featured_photo_2: "/mscpictures/Dec232024/featured_photo1.jpg",
+    featured_photo_3: "/mscpictures/Dec232024/featured_photo2.jpg"
  },
  {
     id: 13,
